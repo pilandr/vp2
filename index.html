@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="start_page hidden">
+        <div class="autorization">
+            <div class="autorization__image"></div>
+            <h1 class="autorization__title">Авторизация</h1>
+            <div class="autorization__text">Введите пожалуйста свой ник для дальнейшей авторизации</div>
+            <input type="text" class="autorization__input" placeholder="Введите свой ник">
+            <button id="loginButton" class="autorization__btn btn">Войти</button>
+            <div class="autorization__error"></div>
+        </div>
+    </div>
+    <div class="chat hidden">
+        <div class="chat__list">
+            <div class="chat__hamburger">
+                <a href="#" class="chat__hamburger-link">
+                    <div class="hamburger">
+                        <div class="hamburger__plank"></div>
+                        <div class="hamburger__plank"></div>
+                        <div class="hamburger__plank"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="chat__users">
+                <div class="chat__user-item">
+                    <div class="user">
+                        <div class="user__foto">
+                            <img src="./img/nophoto.png" alt="" class="user__pic">
+                        </div>
+                        <div class="user__info">
+                            <div class="user__nickname">gfbfgb</div>
+                            <div class="user__lastmessage">gfngfngfn</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat__main">
+            <div class="chat__header">
+                <div class="chat__title">Чат</div>
+                <div class="chat__count">2 человека</div>
+            </div>
+            <div class="chat__messages">
+                <!-- <div class="message">
+                    <div class="message__avatar">
+                        <img src="" alt="" class="message__img">
+                    </div>
+                    <div class="message__content">
+                        <div class="message__nickname">Boroda23</div>
+                        <div class="message__area">
+                            <div class="message__text">Привет frf re fre
+                                erfeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</div>
+                            <div class="message__time">17:55</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="chat__sender">
+                <input type="text" class="chat__input" placeholder="Введите сообщение...">
+                <button class="btn chat__btn">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <!-- Модальное содержание -->
+        <div class="modal__content">
+            <div class="modal__title">Загрузка фото</div>
+
+            <div class="modal__cover">
+                <div class="modal__foto">
+                    <img src="./img/nophoto.png" alt="" class="modal__pic">
+                </div>
+                <div class="modal__nickname">Nick</div>
+            </div>
+            <a href="#" class="modal__close"></a>
+        </div>
+    </div>
+    <script type="module" src="client.js"></script>
+</body>
+
+</html>
